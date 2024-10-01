@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Image Upload Form</title>
+    <link rel="stylesheet" href="views/style.css">
+  </head>
+  <body>
+    <h1>Image Upload Form</h1>
+    <form id="uploadForm">
+      <input type="file" name="imageFile" id="imageFile">
+      <button type="submit" id="uploadBtn">Upload Image</button>
+    </form>
+	<div id="processForm">
+      <button id="BinaryBtn">Binary</button>
+	  <button id="DilationBtn">Dilation</button>
+      <button id="ErosionBtn">Erosion</button>
+	  <button id="OpeningBtn">Opening</button>
+      <button id="ClosingBtn">Closing</button>
+    </div>
+    <div id="progressBar" class="progress"></div>
+    <img id="result"></img>
+    <script src="views/script.js"></script>
+  </body>
+</html>
